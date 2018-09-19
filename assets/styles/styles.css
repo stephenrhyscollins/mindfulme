@@ -4,8 +4,7 @@ body {
     width: 100vw;
     /*display: flex;
     flex-direction: column;*/
-    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
-    background: linear-gradient(#C074B2, #8AB5E8);
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
 }
 
 * {
@@ -79,6 +78,7 @@ div.fill > *{
     margin: 20px;
 }
 
+
 div.fill > section{
     width: 100%;
 }
@@ -130,7 +130,8 @@ section .icon {
 }
 
 div.fill:first-of-type {
-    min-height: calc(100% - 130px);
+    background: linear-gradient(#C074B2, #8AB5E8);
+    margin-bottom: -110px;
 }
 
 div.white{
@@ -141,7 +142,6 @@ div.curve-top {
   border-top-left-radius: 100% 2%;
   border-top-right-radius: 100% 2%;
   background: #fff;
-  opacity: 0.9;
   padding-top: 20px;
 }
 
