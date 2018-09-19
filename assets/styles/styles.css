@@ -65,6 +65,13 @@ header ul li:hover{
     border-radius: 2em;
 }
 
+#title{
+    
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
 
 div#content{
     overflow: auto;
@@ -97,8 +104,8 @@ div.fill {
         flex-direction: column;
         justify-content: center;
     }
-    .section-content{
-
+    .row > *:not(.section-header), .column > *:not(.section-header), .section-content > *{
+        padding: 3px;
     }
 }
 
@@ -134,7 +141,7 @@ div.fill > section.row, div.fill > section.column{
 }
 
 .row > *:not(.section-header), .column > *:not(.section-header), .section-content > *{
-    padding: 10px;
+    padding: 5px;
 }
 .column {
     display: flex;
