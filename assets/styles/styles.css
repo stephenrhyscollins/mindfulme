@@ -16,11 +16,11 @@ body > h1, body > h2 , body > h3 {
 
 header{
     display: flex;
-    position: fixed;    
+    position: sticky;    
     flex-direction: row;
     justify-content: space-between;
     width: 100vw;;
-    align-items: centre;
+    align-items: center;
     background: #fff;
     white-space: nowrap;
     flex-wrap: wrap;
@@ -38,9 +38,16 @@ header a {
 }
 
 header ul {
+    flex-grow: 1;
     list-style: none;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
 }
 
 header ul li{
@@ -133,7 +140,9 @@ section .icon {
 
 div.fill:first-of-type {
     background: linear-gradient(#C074B2, #8AB5E8);
-    margin-bottom: -130px;
+    margin-bottom: -50px;
+    min-height: 0;
+    height: calc(100% - 190px);
 }
 
 div.white{
@@ -147,13 +156,13 @@ div.curve-top {
   padding-top: 20px;
 }
 
-div.v-centre{
+div.v-center{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-div.h-centre{
+div.h-center{
     display: flex;
     justify-content: flex-start;
     align-items: center;
