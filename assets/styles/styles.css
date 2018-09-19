@@ -130,7 +130,7 @@ section .icon {
 }
 
 div.fill:first-of-type {
-    min-height: calc(100% - 220px);
+    min-height: calc(100% - 130px);
 }
 
 div.white{
