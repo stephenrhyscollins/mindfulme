@@ -17,6 +17,8 @@ body > h1, body > h2 , body > h3 {
 header{
     display: flex;
     position: sticky;    
+    top: 0;
+    align-self: flex-start;
     flex-direction: row;
     justify-content: space-between;
     width: 100vw;;
@@ -83,6 +85,30 @@ div.fill {
     box-sizing: border-box;
     flex-direction: column;
 }
+
+@media only screen and (min-device-width: 320px) and (max-width:480px){
+    div.fill{
+        padding: 20px;
+    }
+    div.fill > *{
+        margin: 5px!important;
+    }
+    .row.collapse{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section-content{
+
+    }
+}
+
+
+.section-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+}
+
 div.fill > *{
     margin: 20px;
 }
@@ -100,14 +126,14 @@ div.fill > section.row, div.fill > section.column{
 .row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
-.row.center{
+.row.left{
+    justify-content: flex-start;
     align-items: center;
 }
 
-.row > *:not(.title), .column > *:not(.title){
+.row > *:not(.section-header), .column > *:not(.section-header), .section-content > *{
     padding: 10px;
 }
 .column {
@@ -116,11 +142,12 @@ div.fill > section.row, div.fill > section.column{
     justify-content: space-between;
 }
 
+
 .row.center{
     justify-content: center;
 }
 
-.text-left{
+.section-header{
     text-align: left;
 }
 .text-right{
@@ -136,6 +163,7 @@ div.fill > section.row, div.fill > section.column{
 
 section .icon {
     margin: 10px;
+    min-width: 50px;;
 }
 
 div.fill:first-of-type {
@@ -184,5 +212,23 @@ a.border{
 a.border:hover{
     background: #fff;
     color: #4c146e;
+}
+
+
+
+#inventory-icon{
+    color:#03a9f4;
+}
+
+#record-icon{
+    color:#e91e63;
+}
+
+#analysis-icon{
+    color:#8bc34a;
+}
+
+#scheduling-icon{
+    color:#2196f3;
 }
 
